@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <ul>
+                <li class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="0 -960 960 960" width="60px" fill="#F19E39">
+                        <path d="M40-120v-60h880v60H40Zm100-120q-24 0-42-18t-18-42v-480q0-24 18-42t42-18h680q24 0 42 18t18 42v480q0 24-18 42t-42 18H140Zm0-60h680v-480H140v480Zm0 0v-480 480Z"/>
+                    </svg>
+                </li>
+                <div class="right">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                </div>
+            </ul>
+        </nav>
+        <div id="home" class="detel">
+            <h1>I’m Labbi <span>Srikanth </span>Babu</h1>
+            <p>This is my official portfolio website to show all 
+                <br>details and work experience.
+            </p>
+            <a href="resume/Resume for SS.pdf">DOWNLOAD CV</a>
+        </div>
+        <div class="images">
+            <img src="images/profile_pic-removebg-preview.png" class="boy">
+        </div>
+    </div>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about_me">
+                <p>Hello, I'm <span>Labbi Srikanth Babu</span>, a passionate full-stack web developer.</p>
+                <p>I studied at <span>G PULLA REDDY ENGINEERING COLLEGE</span>, where I honed my skills and developed a deep interest in web development.</p>
+                <p>Creating dynamic, responsive, and user-friendly websites is something I am very passionate about. I am constantly learning new technologies and techniques to improve my craft.</p>
+                <p>With my passion for web development, I am excited to continue exploring my creative side and contribute to the success of the organization.</p>
+            </div>
+            <h2>Hobbies</h2>
+            <ul class="hobbies">
+                <li>Playing Basketball</li>
+                <li>Playing Video Games</li>
+                <li>Travelling</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Food Munch</h3>
+                <a href="kanthsri24.ccbp.tech">project1_link</a>
+                <p><span>Technologies used:</span> HTML, CSS, Bootstrap</p>
+                <p>Developed a responsive website for a Food Store where users can see a list of food items, detailed information about a food item, offers.</p>
+                <ul>
+                    <li>Designed the page using HTML structure elements like li, header, article, footer elements, and different Bootstrap components to show different sections in the website and various Bootstrap classes for responsiveness through a mobile-first approach.</li>
+                    <li>Implemented product YouTube videos by using Bootstrap embed and modal components.</li>
+                </ul>
+            </div>
+            <div class="project">
+                <h3>Chatbot</h3>
+                <a href="kanthgenai.ccbp.tech">project2_link</a>
+                <p><span>Technologies used:</span> HTML, CSS, JS, Bootstrap</p>
+                <p>An innovative Chatbot designed to offer personalized and engaging interactions with users.</p>
+                <ul>
+                    <li>User-friendly UI created using HTML, CSS, and Bootstrap to display user-chatbot interactions.</li>
+                    <li>Dynamic display of user inputs and chatbot responses achieved through JavaScript DOM operations and Array methods.</li>
+                    <li>Chatbot responses tailored to user inputs by filtering relevant answers from its predefined list.</li>
+                </ul>
+            </div>
+            <div class="project">
+                <h3>Tourism Website</h3>
+                <a href="tourismprojec.ccbp.tech">project3_link</a>
+                <p><span>Technologies used:</span> HTML, CSS, Bootstrap</p>
+                <p>Devised an immersive web experience for users to discover top travel destinations through images, videos, and descriptions.</p>
+                <ul>
+                    <li>Developed a mobile-optimized interface using HTML elements and CSS3 styling techniques, including background, flex, and CSS box model properties.</li>
+                    <li>Implemented destination galleries and virtual tour videos utilizing Bootstrap carousel and embed components.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="resume">
+        <div class="container">
+            <h2>Resume</h2>
+            <p>You can download my resume by clicking the button below:</p>
+            <a href="resume/Resume for SS.pdf" target="_blank" class="btn btn-primary">Download CV</a>
+        </div>
+    </section>
+    <footer>
+        <div class="social_media">
+            <p>
+                &copy;
+                <span id="year"></span>
+                <span id="name"></span> All rights reserved
+            </p>
+            <p >
+                <a href="https://github.com/LABBISRIKANTHBABU" target="_blank">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+                <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <a href="https://x.com/SriKant77224733" target="_blank">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </a>
+            </p>
+            <p>
+                Created by
+           </p>
+                Labbi Srikanth Babu. All rights reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

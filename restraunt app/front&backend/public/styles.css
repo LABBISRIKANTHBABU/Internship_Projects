@@ -1,0 +1,533 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
+}
+
+nav {
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    flex-wrap: wrap; /* For responsiveness */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .logo img {
+    height: 60px; /* Adjusted for better visibility */
+    width: auto;
+}
+
+.nav-toggle {
+    display: none;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* For responsiveness */
+    justify-content: center;
+    flex-grow: 1;
+}
+
+nav ul li {
+    margin: 0.5em 1em; /* Adjusted for better spacing in responsive layout */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+header {
+    text-align: center;
+    padding: 2em 0;
+    color: #fff;
+    font-size: 25px;
+}
+
+section {
+    margin-top: 4em;
+   
+    color: #000000;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.5;
+    background-image: url('https://source.unsplash.com/random/1000x500');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    padding: 4em;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    margin-bottom: 2em;
+    color: #e4882b;
+    text-align: center;
+}
+
+section p {
+    margin-bottom: 1em;
+}
+
+section img {
+    width: 100%;
+    height: auto;
+}
+
+section a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+section a:hover {
+    color: #ff7e5f;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap; /* For responsiveness */
+    justify-content: space-around;
+    margin: 2em 0;
+}
+
+#gallery img {
+    width: 100%;
+    max-width: 30%; /* Adjusts for different screen sizes */
+    height: auto;
+    margin: 0.5em;
+}
+
+form {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 0.5em 0 0.2em;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 0.5em;
+    margin: 0.5em 0;
+}
+
+.menu-section {
+    width: 90%;
+    max-width: 600px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-section h3 {
+    margin-bottom: 0.5em;
+}
+
+.menu-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-section li {
+    margin: 0.5em 0;
+}
+
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+    
+    nav ul {
+        display: none; /* Hide menu initially */
+        flex-direction: column; /* Stacks the nav items vertically on small screens */
+        align-items: center;
+        width: 100%;
+    }
+    
+    nav ul li {
+        margin: 0.5em 0;
+    }
+    
+    #gallery img {
+        max-width: 100%; /* Images take full width on smaller screens */
+    }
+    
+    form, .menu-section, #contact {
+        width: 100%;
+    }
+}
+
+.tasty {
+    color: #000000;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+}
+
+.event {
+    width: 90%;
+    max-width: 600px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#events h2 {
+    margin-bottom: 1em;
+    text-align: center;
+    color: #ff871e;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#events ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* For responsiveness */
+    justify-content: space-around;
+}
+
+#events ul li {
+    margin: 0.5em 1em; /* Adjusted for better spacing in responsive layout */
+    width: 48%;
+}
+
+#events ul li img {
+    width: 100%;
+    height: auto;
+}
+
+#events ul li h3 {
+    margin-bottom: 0.5em;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#events ul li p {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+
+.social-media {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.social-media img {
+    height: 30px;
+    width: auto;
+}
+
+.social-media a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #ff7e5f;
+}
+
+@media (max-width: 768px) {
+    .social-media {
+        flex-direction: column; /* Stacks the social media icons vertically on small screens */
+        align-items: center;
+        margin-bottom: 0;
+    }
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-form {
+    width: 90%;
+    max-width: 600px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.contact-form h2 {
+    margin-bottom: 1em;
+    text-align: center;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#location{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 2em;
+}
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+    nav ul li {
+        margin: 0;
+    }
+    .nav-toggle {
+        display: block;
+    }
+}
+
+header {
+    text-align: center;
+    padding: 2em 0;
+    background: rgba(254, 248, 241, 0.8);
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #ff7e5f; /* Gradient start color */
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #feb47b; /* Gradient end color */
+}
+
+.home-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1em;
+}
+
+.home-gallery img {
+    width: 100%;
+    margin: 0.5em;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.home-gallery img:hover {
+    transform: scale(1.05);
+}
+
+section {
+    padding: 2em 1em;
+   
+    background: rgba(255, 255, 255, 0.9);
+    margin: 1em 0;
+}
+
+section h2 {
+    color: #ff7e5f; /* Gradient start color */
+    margin-bottom: 0.5em;
+}
+
+section p, section ul {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.menu-section {
+    margin-bottom: 1em;
+}
+
+.menu-section h3 {
+    color: #feb47b; /* Gradient end color */
+}
+
+/* Form styling */
+form {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin: 0.5em 0 0.2em;
+    text-align: left; /* Align labels to the left */
+    color: #333;
+}
+
+form input, form select, form button {
+    width: 100%;
+    padding: 0.5em;
+    margin: 0.5em 0;
+}
+
+form button {
+    background-color: #ff7e5f; /* Gradient start color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #feb47b; /* Gradient end color */
+}
+
+/* Order Online and Book a Table sections */
+#order, #reservation {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 2em;
+}
+
+#order label, #reservation label {
+    text-align: left; /* Ensure labels are aligned left */
+}
+
+/* About section */
+#about{
+    font-size: 10px;
+    color: #333;
+    margin-top: 2em;
+    text-align: center;
+
+}
+
+#confirmation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #333;
+    padding: 2em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 2em auto;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+#confirmation h2 {
+    color: #ff7e5f; /* Gradient start color */
+    margin-bottom: 0.5em;
+}
+
+#confirmation p {
+    color: #333;
+    font-size: 1.1em;
+    margin-bottom: 1em;
+}
+
+#confirmation a {
+    color: #ff7e5f; /* Gradient start color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#confirmation a:hover {
+    color: #feb47b; /* Gradient end color */
+}
+
+/* Add styles for the login section */
+#login {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+#login h2 {
+    margin-top: 0;
+}
+
+#login form {
+    display: flex;
+    flex-direction: column;
+}
+
+#login label {
+    margin: 10px 0 5px;
+}
+
+#login input {
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+#login button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#login button:hover {
+    background-color: #555;
+}
+
+/* Add other necessary styles */

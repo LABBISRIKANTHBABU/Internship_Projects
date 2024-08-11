@@ -1,0 +1,13 @@
+body {
+    transition: background-color 0.5s ease;
+  }
+  
+  body.day {
+    background-color: #ffffff;
+  }
+  
+  body.night {
+    background-color: #1a1a2e;
+    color: #ffffff;
+  }
+  
